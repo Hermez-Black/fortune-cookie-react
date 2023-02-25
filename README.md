@@ -15,7 +15,7 @@ to run this project:
   npm run dev
 ```
 
-if you have vscode 
+if you have vscode
 ```
   code .
 ```
