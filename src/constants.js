@@ -1,0 +1,2 @@
+
+export const NUMBER_BACKGROUND_IMGS = 4;
