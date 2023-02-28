@@ -1,6 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.App {
+  height: 100%;
+  width: 100%;
+  position: absolute;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 40%;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 3px #f7a130;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    width: 80%;
+    font-size: 35px;
+  }
+}
+
+.card {
+  width: 40%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #535353;
+  padding: 3%;
+  margin-top: 6%;
+  border: solid 2px #869799;
+}
+
+.btn-next {
+  font-family: 'Quicksand', sans-serif;
+  width: 14%;
+  height: 5%;
+  border: 2px solid #645a50;
+  color: #645a50;
+  border-radius: 9px;
+  padding: 5px;
+  font-weight: 500;
+  margin-top: 6%;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+.boxAutor {
+  width: 15%;
+  height: 5%;
+  margin-top: 23%;
+  background-color: #869799;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+boxAutor:hover {
+  background-color: #f7a130;
 }
