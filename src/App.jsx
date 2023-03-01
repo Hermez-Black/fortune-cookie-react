@@ -1,6 +1,9 @@
 import './App.css';
 import { useState } from 'react';
 import { makeRandomNumber } from './utils/math';
+
+import { CSSTransition } from 'react-transition-group';
+
 import AuthorPhrase from './components/AuthorPhrase';
 import Btn from './components/Btn';
 import CardText from './components/CardText';
@@ -31,11 +34,17 @@ function App() {
       style={
         {backgroundImage: `url(/fortuneSquare/fondo${indexImg}.png)`}
       }>
+      {/* <CSSTransition
+        in={indexPhrase ? true : false}
+        timeout={500}
+        className="mi-animacion"
+        unmountOnExit >
+        <div>HOLAAA</div>
+      </CSSTransition> */}
       <Title />
       <Btn
         handler={nextPhrase}
-        text="Probar mi suerte"
-        colorBackground="#F0AD47" />
+        text="Probar mi suerte" />
       <CardText textPhrase={phrases[indexPhrase]}/>
       <AuthorPhrase author={phrases[indexPhrase]}/>
     </div>

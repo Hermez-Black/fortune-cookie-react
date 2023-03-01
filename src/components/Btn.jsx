@@ -7,8 +7,7 @@ export default function Btn({
   return (
     <button
       onClick={handler}
-      className="btn-next"
-      style={{backgroundColor: colorBackground}}>
+      className="btn-next">
         {text}
     </button>
   );
